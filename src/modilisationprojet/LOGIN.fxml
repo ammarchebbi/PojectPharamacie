@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modilisationprojet.LOGINController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../progressbar.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLogin" layoutX="33.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="25.0" prefWidth="217.0" text="Login" />
+      <TextField fx:id="txtPassword" layoutX="33.0" layoutY="132.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" />
+      <TextField fx:id="txtUsername" layoutX="33.0" layoutY="91.0" prefHeight="25.0" prefWidth="217.0" promptText="Username" />
+      <Label fx:id="lblMessage" layoutX="33.0" layoutY="33.0" prefHeight="51.0" prefWidth="217.0" textAlignment="CENTER" textFill="#ff130b">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font></Label>
+      <ProgressBar fx:id="prog" layoutX="3.0" layoutY="468.0" prefHeight="18.0" prefWidth="1189.0" progress="0.0" stylesheets="@employeemenu.css" />
+      <Button fx:id="closeButton" layoutX="1067.0" layoutY="429.0" mnemonicParsing="false" onAction="#quitter" prefHeight="25.0" prefWidth="103.0" text="Quitter" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="modilisationprojet.SUPPRIMERCLIENTController">
+   <children>
+      <Label layoutX="40.0" layoutY="54.0" text="SUPPRIMER CLIENT" textFill="#16b516">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="183.0" prefHeight="26.0" prefWidth="37.0" text="Nom" />
+      <TextField fx:id="nom" layoutX="94.0" layoutY="184.0" />
+      <Button layoutX="165.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnsuppr" prefHeight="25.0" prefWidth="78.0" text="Supprimer" />
+      <Label fx:id="confirmation" layoutX="97.0" layoutY="293.0" prefHeight="26.0" prefWidth="147.0" textFill="#0de41b" />
+   </children>
+</AnchorPane>

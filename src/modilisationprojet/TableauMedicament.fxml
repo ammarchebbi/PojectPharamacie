@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="modilisationprojet.TableauMedicamentController">
+    <stylesheets>
+        <URL value="@tableaumedicament.css" />
+    </stylesheets>
+   <children>
+      <TableView layoutX="306.0" layoutY="105.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn prefWidth="208.0" text="NOM Medicament" />
+          <TableColumn prefWidth="197.0" text="Class pharma" />
+            <TableColumn prefWidth="173.0" text="Numero" />
+            <TableColumn prefWidth="221.0" text="Fournisseur" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

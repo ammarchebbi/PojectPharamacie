@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1200.0" stylesheets="@employeemenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modilisationprojet.EmployeeMenuController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../green_texture-_Vintage_Series_Desktop_Wallpaper_1920x1080.jpg" />
+         </image>
+      </ImageView>
+      <TabPane fx:id="tabPane" prefHeight="500.0" prefWidth="1200.0" stylesheets="@employeemenu.css">
+         <tabs>
+            <Tab fx:id="paneclient" closable="false" text="Client">
+               <content>
+                  <VBox alignment="TOP_CENTER" layoutY="208.0" prefHeight="298.0" prefWidth="1200.0">
+                     <children>
+                        <HBox layoutY="208.0" prefHeight="55.0" prefWidth="1200.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="319.0" styleClass="mainFxmlClass">
+                                 <image>
+                                    <Image url="@../logo.png" />
+                                 </image>
+                              </ImageView>
+                              <HBox alignment="BOTTOM_LEFT">
+                                 <children>
+                                    <Label alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" prefHeight="25.0" prefWidth="276.0" text="X">
+                                       <font>
+                                          <Font name="System Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <VBox>
+                                 <children>
+                                    <Button alignment="CENTER" layoutX="702.0" layoutY="10.0" mnemonicParsing="false" onAction="#facture" prefHeight="25.0" prefWidth="175.0" text="Facture" />
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <ImageView fitHeight="43.0" fitWidth="37.0">
+                                             <image>
+                                                <Image url="@../fact.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Button alignment="CENTER" layoutX="817.0" layoutY="10.0" mnemonicParsing="false" onAction="#fournibtn" prefHeight="25.0" prefWidth="195.0" text="Fournisseur" />
+                                    <HBox alignment="CENTER" prefHeight="49.0" prefWidth="191.0" />
+                                 </children>
+                              </VBox>
+                              <Button fx:id="btnstock" mnemonicParsing="false" prefHeight="25.0" prefWidth="218.0" text="Stock" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ListView fx:id="list1" opacity="0.74" prefHeight="177.0" prefWidth="609.0" styleClass="mainFxmlClass" />
+                              <HBox alignment="BOTTOM_RIGHT" prefHeight="164.0" prefWidth="589.0" spacing="5.0">
+                                 <children>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#ajouterbtn" prefHeight="25.0" prefWidth="175.0" text="Ajouter" textFill="#1e1e1d">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="195.0" text="Supprimer" textFill="#0d0d0d">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="218.0" text="Rafraîchir" textFill="#171616">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <LineChart fx:id="chart" prefHeight="233.0" prefWidth="608.0" title="Nombre de clients / Mois">
+                                <xAxis>
+                                  <CategoryAxis fx:id="jour" side="BOTTOM" tickLabelFill="#eb2a15" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis fx:id="nombre" side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                              <TableView fx:id="table" opacity="0.71" prefHeight="246.0" prefWidth="592.0">
+                                <columns>
+                                  <TableColumn fx:id="nom" prefWidth="192.0" text="NOM" />
+                                  <TableColumn fx:id="daten" minWidth="0.0" prefWidth="183.0" text="DATE D'OPERATION" />
+                                    <TableColumn fx:id="adress" prefWidth="216.0" text="ADRESS" />
+                                </columns>
+                                 <styleClass>
+                                    <String fx:value="mainFxmlClass" />
+                                    <String fx:value="mainFxmlClass" />
+                                 </styleClass>
+                              </TableView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

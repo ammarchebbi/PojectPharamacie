@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modilisationprojet.AJOUTERCLIENTController">
+    <stylesheets>
+        <URL value="@fxmlprincipale.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <Pane layoutX="243.0" layoutY="93.0" prefHeight="500.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="nom" layoutX="128.0" layoutY="159.0" />
+                  <TextField fx:id="adress" layoutX="128.0" layoutY="200.0" prefHeight="25.0" prefWidth="149.0" />
+                  <DatePicker fx:id="date" layoutX="128.0" layoutY="244.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Label layoutX="24.0" layoutY="163.0" text="Nom" />
+                  <Label layoutX="19.0" layoutY="204.0" text="Adress" />
+                  <Label layoutX="25.0" layoutY="248.0" text="Date" />
+                  <Label layoutX="57.0" layoutY="28.0" prefHeight="32.0" prefWidth="203.0" text="NOUVEAU CLIENT" textFill="#2edb02">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="24.0" layoutY="318.0" mnemonicParsing="false" onAction="#nvclient" prefHeight="25.0" prefWidth="253.0" text="Enregistrer" />
+                  <Label layoutX="23.0" layoutY="121.0" text="Numero" />
+                  <TextField fx:id="id" layoutX="128.0" layoutY="117.0" />
+                  <Label fx:id="confirmation" layoutX="26.0" layoutY="355.0" prefHeight="17.0" prefWidth="243.0" textFill="#20bc1b">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
